@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Weather Data API</h1>
+
+    <p>
+        URL Format: http://127.0.0.1:5000/api/v1/station/date
+    </p>
+    <p>
+        URL Example for one station for one date: 
+        <a href="http://127.0.0.1:5000/api/v1/10/1988-10-25">
+            http://127.0.0.1:5000/api/v1/10/1988-10-25
+        </a>
+    </p>
+    <p>
+        URL Example for one station for all dates: 
+        <a href="http://127.0.0.1:5000/api/v1/10">
+            http://127.0.0.1:5000/api/v1/10
+        </a>
+    </p>
+    <p>
+        URL Example for one station for all dates: 
+        <a href="http://127.0.0.1:5000/api/v1/yearly/10/1988">
+            http://127.0.0.1:5000/api/v1/yearly/10/1988
+        </a>
+    </p>
+    
+    <!-- Pass a variable with HTML format and show it with "safe" -->
+    {{ stations | safe }}
+</body>
+</html>
